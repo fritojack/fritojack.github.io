@@ -1,8 +1,13 @@
-body {
+html {
+    box-sizing: border-box;
+}
+
+body{
     background-image: url("../imgs/potw1709a.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: scroll;
+
 }
 
 .stand-out-text {
@@ -14,4 +19,21 @@ body {
 
 .my-list {
     list-style-type: none;
+    text-align: center;
+    padding: 0;
 }
+
+.cool-text {
+    font-family: Monospace;
+    color: #FFF;
+}
+
+.boxed {
+    border: 1px solid gold;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: #FFF;
+    
+}
+
