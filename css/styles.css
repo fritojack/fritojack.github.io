@@ -1,0 +1,17 @@
+body {
+    background-image: url("../imgs/potw1709a.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.stand-out-text {
+    font-family: 'Russo One', sans-serif;
+    font-size: 48px;
+    color: #EACA15;
+    text-shadow: 3px 1px 1px #991009;
+}
+
+.my-list {
+    list-style-type: none;
+}
