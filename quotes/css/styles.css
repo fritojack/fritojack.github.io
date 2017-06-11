@@ -1,0 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+
+.boxed {
+    border-style: double;
+    border-width: 20px;
+    border-color: green;
+    box-shadow: 13px 13px 15px #ccc;
+}
+
+.top-space {
+    height: 100px;
+}
+
+

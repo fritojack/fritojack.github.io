@@ -1,0 +1,26 @@
+html {
+    box-sizing: border-box;
+}
+
+.content {
+    width: 70%;
+    margin: 0;
+}
+
+.quote-box {
+    height: 200px;
+    width: 400px;
+    background-color: mauve;
+    opacity: 0.5;
+}
+
+.text {
+    color: blue;
+}
+
+.boxed {
+    border-style: double;
+    border-width: 20px;
+    border-color: green;
+    
+}

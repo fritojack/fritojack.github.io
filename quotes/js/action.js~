@@ -1,0 +1,14 @@
+$(document).ready(function(val){
+    $(".quote-do").on("click",function(){
+	var html = ""
+	$.ajax({
+	    type: "POST",
+	    dataType: 'jsonp',
+	    url: "http://api.forismatic.com/api/jsonp/",
+	}).done(function(data){
+	    console.log(data);
+	});
+
+	$(".quote-go-here").html("here bo poo bah");
+    });
+});
