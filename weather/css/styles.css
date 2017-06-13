@@ -47,3 +47,37 @@ body {
     text-align: center;
 }
 
+.fa-cog {
+    color: white;
+}
+
+.icon-cog {
+    color: white;
+}
+
+.icons {
+    color: white;
+    text-align: center;
+}
+
+#sunny {
+    visibility: hidden;
+}
+
+#rainy {
+    visibility: hidden;
+}
+
+#coldy {
+    visibility: hidden;
+}
+
+#cloudy {
+    visibility: hidden;
+}
+
+.toggle-div {
+    text-align: center;
+}
+
+

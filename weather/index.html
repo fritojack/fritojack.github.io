@@ -6,6 +6,7 @@
     <title>Local Weather</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://use.fontawesome.com/84e4734f62.js"></script>
     <script src="js/action.js"></script>
   </head>
   <body>
@@ -14,10 +15,19 @@
     <div class="container">
       <div class="location">
 	<p class="whereabouts">Holder Text</p>
+	<p class="icons">
+	  <i id="sunny" class="fa fa-sun-o" aria-hidden="true"></i>
+	  <i id="cloudy" class="fa fa-cloud" aria-hidden="true"></i>
+	  <i id="coldy" class="fa fa-snowflake-o" aria-hidden="true"></i>
+	  <i id="rainy" class="fa fa-umbrella" aria-hidden="true"></i>
+	</p>
       </div>
       <br>
       <div class="temperature">
 	<p class="how-hot">Holder Text</p>
+	<div class="toggle-div">
+	  <button class="toggle">Toggle</button>
+	  </div>
       </div>
     </div>
     

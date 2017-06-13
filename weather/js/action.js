@@ -51,6 +51,10 @@
 })();
 
 $(document).ready(function(){
+    var tempo = 0;
+    var city = "";
+    var fromApi = "";
+    var state = 0;
     if (navigator.geolocation){
 	navigator.geolocation.getCurrentPosition(function(pos){
 	    var lat = pos.coords.latitude;
@@ -66,11 +70,55 @@ $(document).ready(function(){
 		url: weatherlookup,
 
 		success: function(data){
-		    console.log(data);
+		    city = data.name;
+		    $(".whereabouts").html(city);
+		    tempo = data.main.temp;
+		    tempo = Math.round((1.8 * (tempo - 273)) + 32);
+		    var tempstr = "" + tempo + "F";
+		    $(".how-hot").html(tempstr);
+		    if (data.weather[0].main === "Clouds"){
+			$("#cloudy").css("visibility", "visible");
+		    }
+
+
+
+		    if (tempo > 84 ){
+			$("#sunny").css("visibility", "visible");
+		    }
+
+		    if (data.weather[0].main === "Rain"){
+			$("#rainy").css("visibility", "visible");
+		    }
+
+		    if (tempo < 48 ) {
+			$("#coldy").css("visibility","visible");
+		    }
+		    
 		}
 	    });
 	});
 
 		
     }
+
+    $(".toggle").on("click",function(data){
+	if (state === 0 ){
+	    state = 1;
+	    tempo -= 32;
+	    tempo *= (1/1.8);
+	    tempo = Math.round(tempo);
+	    var nstr = "" + tempo + "C";
+	    $(".how-hot").html(nstr);
+	} else {
+	    state = 0;
+	    tempo *= 1.8;
+	    tempo += 32;
+	    tempo = Math.round(tempo);
+	    var astr = "" + tempo + "F";
+	    $(".how-hot").html(astr);
+	}
+
+    });
+	
+
 });
