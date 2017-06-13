@@ -1,0 +1,49 @@
+body {
+    font-family: Monospace, sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    width: 80%;
+    margin: auto;
+    background-color: Olive;
+    opacity: 0.9;
+    box-shadow: 3px 3px 8px black;
+    border-radius: 5px;
+}
+
+.temperature {
+    width: 80%;
+    margin: auto;
+    opacity: 0.9;
+    box-shadow: 3px 3px 8px black;
+    background-color: Peru;
+    border-radius: 5px;
+}
+
+.spacing {
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.whereabouts {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+
+
+}
+
+.how-hot {
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
