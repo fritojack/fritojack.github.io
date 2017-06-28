@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikiviewer</title>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="js/action.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main class="big">
+      <div class="spacer">
+      </div>
+      <div class="inthisbox">
+
+      <div class="random">
+	<p class="query">?</p>
+      </div>
+      <div class="search">
+	<input class="inputhere" type="text" name="fobizbix" size="35"></input>
+	<p class="explain">Type some text and press return to get a wikipedia article or click the <a href="https://en.wiktionary.org/wiki/eroteme" target="_blank">eroteme</a> for a random article if you are willing to waste your time on this Earth</p>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>

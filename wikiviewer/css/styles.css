@@ -1,0 +1,60 @@
+.big {
+
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.random {
+
+    height: 100px;
+    width: 100%;
+
+}
+
+.search {
+
+
+    width: 100%;
+
+    
+}
+
+.inthisbox {
+    background-color: #2F74E2;
+    box-shadow: 3px 5px 8px black;
+    border-radius: 5px;
+}
+
+.spacer {
+    height: 175px;
+    width: 100%;
+}
+
+.query {
+    text-align: center;
+    font-family: Monospace;
+    font-size: 4em;
+    cursor: pointer;
+    color: #F71B60;
+    text-shadow: 0 0 3px yellow;
+}
+
+
+.inputhere {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.explain {
+    width: 50%;
+    text-align: center;
+    font-family: Monospace;
+    font-size: 2em;
+    color: #F71B60;
+    margin: auto;
+    text-shadow: 0 0 3px yellow;
+}
